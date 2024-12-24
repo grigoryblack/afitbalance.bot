@@ -4,11 +4,12 @@ import styles from "./UserPage.module.scss";
 import PoliticModal from "../../components/Modals/ConfitmPolitic/PoliticModal.tsx";
 import { openModal } from "../../redux/modal/modalSlice.ts";
 import { useDispatch } from "react-redux";
+import type { TUserForm } from "./UserPage.types.tsx";
 
 const UserPageView = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values) => {
+  const onFinish = (values: TUserForm) => {
     if (!values.agree)
       return message.error(
         "Вы должны согласиться с Политикой конфиденциальности!",
