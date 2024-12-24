@@ -1,0 +1,30 @@
+@use "@scss/styles" as *;
+
+.user__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+
+  h1 {
+    @include font-xlarge;
+    margin-bottom: 20px;
+    color: $secondary-10;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .container {
+    label {
+      color: $secondary-10;
+    }
+
+    .politic {
+      margin-left: 4px;
+      color: $primary-50;
+
+      &:hover {
+        color: $primary-100
+      }
+    }
+  }
+}

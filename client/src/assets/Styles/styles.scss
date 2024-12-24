@@ -1,0 +1,40 @@
+/* Главные цвета */
+$grayscale-900: #333333;
+$grayscale-600: #4B4B4B;
+$grayscale-300: #D8D8D8;
+$grayscale-100: #EBEBEB;
+$grayscale-0: #FFFFFF;
+$primary-10: #f16cb9;
+$primary-50: #ed48a8;
+$primary-100: #CA0A80;
+$background: #222127;
+$secondary-10: #FFE1F4;
+$secondary-50: #f9aad8;
+$secondary-100: #f68fcb;
+
+/* Размеры для адаптива */
+$sm: 320px;
+$md: 768px;
+$lg: 1024px;
+$xlg: 1440px;
+
+/* Миксины для шрифтов */
+@mixin font-default {
+  font-size: 16px;
+}
+
+@mixin font-small {
+  font-size: 14px;
+}
+
+@mixin font-xsmall {
+  font-size: 12px;
+}
+
+@mixin font-large {
+  font-size: 18px;
+}
+
+@mixin font-xlarge {
+  font-size: 22px;
+}

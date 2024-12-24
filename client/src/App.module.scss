@@ -1,0 +1,61 @@
+@use "@scss/styles" as *;
+
+.main__wrapper {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  margin-top: 64px;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $background;
+    padding: 0 20px;
+    border-bottom: 1px solid $grayscale-600;
+    z-index: 1000;
+
+    h1 {
+      font-size: 25px;
+      color: $secondary-100;
+    }
+  }
+
+  .menu__wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $background;
+    border-top: 1px solid $grayscale-600;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+
+    .label {
+      width: 100%;
+      background-color: $background;
+      color: $secondary-10;
+      border: none;
+
+      &.active {
+        color: $primary-50;
+        background-color: $background;
+      }
+
+      &:hover {
+        background-color: $background;
+        color: $secondary-50;
+      }
+    }
+  }
+}
