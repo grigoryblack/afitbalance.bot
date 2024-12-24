@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { closeModal } from "../../../redux/modal/modalSlice.ts";
 import { Button, Modal } from "antd";
 import { useAppSelector } from "../../../redux/hooks/useAppSelector.tsx";
