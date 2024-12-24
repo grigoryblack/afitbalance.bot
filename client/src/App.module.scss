@@ -46,7 +46,8 @@
       background-color: $background;
       color: $secondary-10;
       border: none;
-
+      padding-top: 20px;
+      padding-bottom: 50px;
       &.active {
         color: $primary-50;
         background-color: $background;
